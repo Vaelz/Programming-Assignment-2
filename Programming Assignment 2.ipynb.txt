@@ -1,0 +1,134 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "727b2905-639b-4944-be9a-61ff18f23443",
+   "metadata": {},
+   "source": [
+    "## NORMALIZATION PROBLEM"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "362ad79c-d482-49f2-bdf9-15025dc4898f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Original array (X)\n",
+      "[[0.42944349 0.83891061 0.33260316 0.5687882  0.13991329]\n",
+      " [0.44380918 0.58506459 0.09587519 0.72008891 0.31961267]\n",
+      " [0.54420123 0.14430062 0.47213647 0.52547312 0.08092469]\n",
+      " [0.56943704 0.33195641 0.58462954 0.79467626 0.0585484 ]\n",
+      " [0.28045439 0.22689494 0.4758611  0.76703718 0.42010168]]\n",
+      "Normalized array (X_normalized)\n",
+      "[[-0.00262886  1.83366066 -0.43691745  0.62227412 -1.30105129]\n",
+      " [ 0.06179524  0.69526696 -1.49854383  1.30079482 -0.49517439]\n",
+      " [ 0.51201179 -1.28137591  0.18883135  0.42802403 -1.56559059]\n",
+      " [ 0.62518389 -0.43981783  0.69331592  1.63528802 -1.66593892]\n",
+      " [-0.67078294 -0.91097479  0.20553477  1.51133826 -0.04452302]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Import numpy Library\n",
+    "import numpy as np\n",
+    "\n",
+    "\n",
+    "X = np.random.rand(5, 5) # Create a 5x5 random ndarray\n",
+    "\n",
+    "# Normalize X\n",
+    "X_mean = X.mean()  # Compute the mean\n",
+    "X_std = X.std()    # Compute the standard deviation\n",
+    "\n",
+    "X_normalized = (X - X_mean) / X_std  # Normalize the ndarray\n",
+    "\n",
+    "np.save('X_normalized.npy', X_normalized) # Save the normalized ndarray into npy\n",
+    "\n",
+    "# Display the original and normalized arrays\n",
+    "print(\"Original array (X)\")\n",
+    "print(X)\n",
+    "print(\"Normalized array (X_normalized)\")\n",
+    "print(X_normalized)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5a0ff910-676c-4331-94b2-2445f0d64b91",
+   "metadata": {},
+   "source": [
+    "## DIVISIBLE BY 3 PROBLEM"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "aca2652d-13d2-4cc6-a467-a7282bb45342",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Original array (A)\n",
+      "[[    1     4     9    16    25    36    49    64    81   100]\n",
+      " [  121   144   169   196   225   256   289   324   361   400]\n",
+      " [  441   484   529   576   625   676   729   784   841   900]\n",
+      " [  961  1024  1089  1156  1225  1296  1369  1444  1521  1600]\n",
+      " [ 1681  1764  1849  1936  2025  2116  2209  2304  2401  2500]\n",
+      " [ 2601  2704  2809  2916  3025  3136  3249  3364  3481  3600]\n",
+      " [ 3721  3844  3969  4096  4225  4356  4489  4624  4761  4900]\n",
+      " [ 5041  5184  5329  5476  5625  5776  5929  6084  6241  6400]\n",
+      " [ 6561  6724  6889  7056  7225  7396  7569  7744  7921  8100]\n",
+      " [ 8281  8464  8649  8836  9025  9216  9409  9604  9801 10000]]\n",
+      "Elements divisible by 3:\n",
+      "[   9   36   81  144  225  324  441  576  729  900 1089 1296 1521 1764\n",
+      " 2025 2304 2601 2916 3249 3600 3969 4356 4761 5184 5625 6084 6561 7056\n",
+      " 7569 8100 8649 9216 9801]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Import numpy Library\n",
+    "import numpy as np\n",
+    "\n",
+    "\n",
+    "A = np.arange(1, 101).reshape(10, 10) ** 2 # Create an 10x10 ndarray into A\n",
+    "\n",
+    "div_by_3 = A[A % 3 == 0] # All elements divisible by 3\n",
+    "\n",
+    "np.save('div_by_3.npy', div_by_3) # Save div_by_3 into npy\n",
+    "\n",
+    "# Display the original array and the array of elements divisible by 3\n",
+    "print(\"Original array (A)\")\n",
+    "print(A)\n",
+    "print(\"Elements divisible by 3:\")\n",
+    "print(div_by_3)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
