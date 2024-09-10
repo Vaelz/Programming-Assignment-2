@@ -10,31 +10,31 @@ Function Used:
   - print()
 
 Documentation:
-- Importing numpy:
+- ###Importing numpy:
 
-* Initially import the numpy library using import numpy as np to access numpy functions.
+Initially import the numpy library using import numpy as np to access numpy functions.
 
-- Generating a random array:
+- ###Generating a random array:
 
-* Create a 5x5 array of random numbers using X = np.random.rand(5, 5).
+Create a 5x5 array of random numbers using X = np.random.rand(5, 5).
 
-- Calculating statistics:
+- ###Calculating statistics:
 
-* Calculated the mean of the array using X_mean = X.mean().
+Calculated the mean of the array using X_mean = X.mean().
 
-* Calculated the standard deviation of the array using X_std = X.std().
+Calculated the standard deviation of the array using X_std = X.std().
 
-- Normalizing the array:
+- ###Normalizing the array:
 
-* Normalized the array with the formula: X_normalized = (X - X_mean) / X_std.
+Normalized the array with the formula: X_normalized = (X - X_mean) / X_std.
 
-- Saving the normalized array:
+- ###Saving the normalized array:
 
-* Saved the normalized array to a .npy file using np.save('X_normalized.npy', X_normalized).
+Saved the normalized array to a .npy file using np.save('X_normalized.npy', X_normalized).
 
-- Previewing the result:
+- ###Previewing the result:
 
-* Printed the normalized values using print(X_normalized) to check the output.
+Printed the normalized values using print(X_normalized) to check the output.
 
 ## Divisible by 3 Problem
 Function Used:
