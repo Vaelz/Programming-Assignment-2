@@ -9,12 +9,12 @@ Function Used:
   - std()
   - print()
 
-Documentation:
+### Documentation:
 - ###Importing numpy:
 
 Initially import the numpy library using import numpy as np to access numpy functions.
 
-###- Generating a random array:
+### - Generating a random array:
 
 Create a 5x5 array of random numbers using X = np.random.rand(5, 5).
 
