@@ -37,13 +37,14 @@ f. Previewing the result:
 - Printed the normalized values using print(X_normalized) to check the output.
 
 ## Divisible by 3 Problem
-Function Used:
+#### Function Used:
   - import numpy as np
   - np.arange()
   - np.reshape()
   - np.save()
   - print()
 
+#### Documentation:
 a. Importing numpy:
 
 - Initially import the numpy library using import numpy as np to access numpy functions.
