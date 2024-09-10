@@ -1,6 +1,14 @@
 # Programming-Assignment-2
 
 ## Normalization Problem
+Function Used:
+  - import numpy as np
+  - np.random.rand()
+  - np.save()
+  - mean()
+  - std()
+  - print()
+
 In this problem, I started with importing numpy as np to use the functions of numpy.
 
 After that I set X to contain random number output code "np.random.rand()" the inset the size "5,5" to create a 5x5 array.
@@ -15,4 +23,8 @@ To check for the output i just used the print() function to get a preview of the
 ## Divisible by 3 Problem
 In this problem, just like the previous problem i started with importing numpy as np to use the functions of numpy.
 
-
+Updates:
+1: Initial Post
+2: Upload npy files
+3: Added ReadMe
+4: 
