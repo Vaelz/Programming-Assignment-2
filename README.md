@@ -44,9 +44,28 @@ Function Used:
   - np.save()
   - print()
 
-In this problem, just like the previous problem i started with importing numpy as np to use the functions of numpy.
+a. Importing numpy:
 
-Updates:
+- Initially import the numpy library using import numpy as np to access numpy functions.
+
+b. Genrate the array
+
+- Creat a 10x10 array of consecutive integers starting from 0 using A = np.arange(1, 101).reshape(10, 10).
+Exponentiated each value in the array by 2 using A = A**2.
+
+c. Finding values divisible by 3:
+
+- Identified the values divisible by 3 using div_by_3 = A[A % 3 == 0].
+
+d. Saving the result:
+
+- Saved the div_by_3 array to a .npy file using np.save('div_by_3.npy', div_by_3).
+
+e. Previewing the arrays:
+
+- Print the original array and the div_by_3 array using print(A) and print(div_by_3) to check the values.
+
+## Updates:
 1: Initial Post
 2: Upload npy files
 3: Added ReadMe
