@@ -9,18 +9,41 @@ Function Used:
   - std()
   - print()
 
-In this problem, I started with importing numpy as np to use the functions of numpy.
+Documentation:
+- Importing numpy:
 
-After that I set X to contain random number output code "np.random.rand()" the inset the size "5,5" to create a 5x5 array.
+* Initially import the numpy library using import numpy as np to access numpy functions.
 
-Then to compute for the mean an standard deviation i used the functions "X.mean()" and "X.std()" then put them in a variable named X_mean and X_std.
-After that i used the variables to normalize the variable X using the formula (X_normalized = (X - X_mean) / X_std).
+- Generating a random array:
 
-To save the the X_normalized i used the function "np.save()" to save it into npy.
+* Create a 5x5 array of random numbers using X = np.random.rand(5, 5).
 
-To check for the output i just used the print() function to get a preview of the normalized value.
+- Calculating statistics:
+
+* Calculated the mean of the array using X_mean = X.mean().
+
+* Calculated the standard deviation of the array using X_std = X.std().
+
+- Normalizing the array:
+
+* Normalized the array with the formula: X_normalized = (X - X_mean) / X_std.
+
+- Saving the normalized array:
+
+* Saved the normalized array to a .npy file using np.save('X_normalized.npy', X_normalized).
+
+- Previewing the result:
+
+* Printed the normalized values using print(X_normalized) to check the output.
 
 ## Divisible by 3 Problem
+Function Used:
+  - import numpy as np
+  - np.arange()
+  - np.reshape()
+  - np.save()
+  - print()
+
 In this problem, just like the previous problem i started with importing numpy as np to use the functions of numpy.
 
 Updates:
