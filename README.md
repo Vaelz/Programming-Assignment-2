@@ -67,7 +67,7 @@ e. Previewing the arrays:
 - Print the original array and the div_by_3 array using print(A) and print(div_by_3) to check the values.
 
 ## Updates:
-1 - Initial Post
-2 - Upload NPY files
-3 - Added ReadMe
-4 -  
+- Initial Post
+- Upload NPY files
+- Added ReadMe
+-  
